@@ -44,8 +44,16 @@ void comprobarMatriz(int **matriz,int nfil, int ncol){
     {
         for (int j = 0; j < nfil; j++)
         {
-            cout<<"|["<<*(*(matriz+i)+j)<<"]";
-            cout<<"["<<*(*(matriz+j)+i)<<"]";
+            cout<<*(*(matriz+i)+j)<<" ";
+        }
+        cout<<"\n";
+    }
+    cout<<"\n";
+    for (int i = 0; i < ncol; i++)
+    {
+        for (int j = 0; j < nfil; j++)
+        {
+            cout<<*(*(matriz+j)+i)<<" ";
         }
         cout<<"\n";
     }

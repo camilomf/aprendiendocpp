@@ -6,7 +6,7 @@ using namespace std;
 
 struct Persona
 {
-    char nombre[30];
+    char nombre[5];
     int edad;
 }persona, *p_persona = &persona;
 
@@ -23,7 +23,7 @@ int main(){
 
 void pedirDatos(){
     
-    cout<<"ingrese nombre ";cin.getline(p_persona->nombre,30,'\n');
+    cout<<"ingrese nombre ";cin.getline(p_persona->nombre,5,'\n');
     cout<<"ingrese edad ";cin>>p_persona->edad;
 }
 
